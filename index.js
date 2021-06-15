@@ -13,7 +13,7 @@ app.use(cors())
 const dotenv = require('dotenv')
 dotenv.config()
 
-const PORT = process.env.PORT | 3333
+const PORT = process.env.PORT || 3333
 
 const { initializeConnection } = require("./util")
 const { Auth, Product, Wishlist, Cart } = require('./router')
